@@ -114,3 +114,53 @@ params = {
 - параметры запроса;
 
 - дата и время запроса.
+
+---
+
+## ⚙️ Установка и запуск проекта
+
+### Требования
+- Python **3.10 или выше**
+- Установленный Telegram (для тестирования бота)
+
+---
+
+### 1️⃣ Клонировать репозиторий
+```bash
+git clone https://github.com/Riso1/telegram_films_search_bot.git
+cd telegram_films_search_bot
+```
+
+### 2️⃣ Создать и активировать виртуальное окружение
+Windows:
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+macOS / Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3️⃣ Установить зависимости
+```python
+pip install -r requirements.txt
+```
+
+### 4️⃣ Создать файл .env
+
+В корне проекта создать файл .env и указать в нём переменные окружения:
+```
+BOT_TOKEN=your_telegram_bot_token
+TMDB_API_KEY=your_tmdb_api_key
+
+BOT_TOKEN — токен Telegram-бота, полученный через @BotFather
+TMDB_API_KEY — API-ключ сервиса The Movie Database
+```
+
+### 5️⃣ Запустить проект
+```python
+python main.py
+```
